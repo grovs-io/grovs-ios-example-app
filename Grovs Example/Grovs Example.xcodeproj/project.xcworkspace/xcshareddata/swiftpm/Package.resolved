@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "grovs-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grovs-io/grovs-iOS",
+      "state" : {
+        "revision" : "7029dd4c04644a0495fb32344aab0f53411f165c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/grovs-io/grovs-iOS",
       "state" : {
-        "revision" : "05575723dca22335179ef1d64d5b7f851907ffd9",
-        "version" : "1.4.0"
+        "revision" : "cea11bf2ea927fc741068c3b422d999a26241d25",
+        "version" : "1.5.0"
       }
     }
   ],

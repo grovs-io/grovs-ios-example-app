@@ -17,14 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GrovsDelegate {
 
         Grovs.setDebug(level: .info)
 
-        Grovs.configure(APIKey: "grovst_06e36086dad3e934289560e3ca59527282030868f8c844629516c6e6c67bbf1f", delegate: self)
-        Grovs.useTestEnvironment = true
+        Grovs.configure(APIKey: "grovst_06e36086dad3e934289560e3ca59527282030868f8c844629516c6e6c67bbf1f", useTestEnvironment: true, delegate: self)
 
 
         Grovs.userIdentifier = "My user identifier"
         Grovs.userAttributes = ["user_id": "1234", "email": "support@grovs.io"]
-
-        Grovs.useTestEnvironment = true
 
         requestNotificationAuthorization()
 

@@ -382,7 +382,7 @@
 			repositoryURL = "https://github.com/grovs-io/grovs-iOS";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
+				minimumVersion = 1.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

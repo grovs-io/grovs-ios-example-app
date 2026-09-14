@@ -39,11 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GrovsDelegate {
         // Friendly dashboard names for automatically tracked screens.
         Grovs.setScreenAliases(["ViewController": "Home"])
 
-        requestNotificationAuthorization()
-
         return true
     }
 
+    /// Ask in context rather than at launch: a permission alert at launch leaves the app
+    /// inactive, so messages set to display automatically wait for the next activation.
     func requestNotificationAuthorization() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if granted {

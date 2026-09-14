@@ -81,6 +81,13 @@ class ViewController: UIViewController, GrovsScreenTracking {
         show(AppDelegate.hasConsent ? "Collection enabled" : "Collection disabled")
     }
 
+    // MARK: - Push notifications
+
+    @objc private func enablePushNotifications() {
+        (UIApplication.shared.delegate as? AppDelegate)?.requestNotificationAuthorization()
+        show("Requested notification permission")
+    }
+
     // MARK: - UI
 
     private func buildDemoControls() {
@@ -90,6 +97,7 @@ class ViewController: UIViewController, GrovsScreenTracking {
             ("Track screen view", #selector(trackScreen)),
             ("Log custom purchase", #selector(logPurchase)),
             ("Toggle collection (consent)", #selector(toggleConsent)),
+            ("Enable push notifications", #selector(enablePushNotifications)),
         ]
 
         let stack = UIStackView(arrangedSubviews: buttons.map { title, action in
